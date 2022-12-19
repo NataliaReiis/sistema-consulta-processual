@@ -1,0 +1,79 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background-image: url("img/bg.opacity2.png") ;
+   background-position: top center ;
+   background-size: 100%;
+   background-repeat: no-repeat;
+     
+}
+
+.tela-login{
+    background-color: rgba(0, 0, 0, 0.69);
+    position: absolute;
+    padding: 13px 60px  ;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+
+p{
+    color: white;
+    font: 11px;
+}
+
+a{
+    color: white;
+}
+.titulo{
+ font-size: 11px;
+ background-color: #004AAD;
+ padding: 1px 15px;
+ color: aliceblue;
+ position: absolute;
+ top: 20%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+h1{
+    color: white;
+}
+
+.img-titulo{
+    width: 200px;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input{
+    padding: 13px;
+    border: none;
+    outline: none;
+    width: 200px;
+    
+}
+
+#button{
+    padding: 10px;
+    width: 100%;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+footer{
+   background-color: #004AAD;
+   color: white;
+   text-align: center;
+   position: fixed;
+   width: 100%;
+   top: 95%;
+   left: 50%;
+   transform: translate(-50%, -40%);
+}
+   
+
