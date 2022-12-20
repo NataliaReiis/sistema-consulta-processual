@@ -13,10 +13,10 @@
        <h2>Acompanhamento Processual</h2>
     </div>
     <div class="tela-login">
-        <p>Não tem uma conta? <a href="cadastro-usuario.html">Cadastre-se</a> </p>
+        <p>Não tem uma conta? <a href="formulario.php">Cadastre-se</a> </p>
         <h1>Login</h1>
         <form action="testLogin.php" method="POST">
-            <input type="text" placeholder="Seu melhor e-mail" name="email">
+            <input type="text" placeholder="Informe seu CPF" name="cpf">
             <br><br>
             <input type="password" placeholder="Senha" name="senha">
             <br><br>

@@ -4,20 +4,16 @@
     $dbUsername = 'root';
     $dbPassword = '250808';
     $dbName = 'sistemajus';
-
     $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
-
     /* if($conexao->connect_errno)
     {
         echo "Erro";
     }
     else{
         echo "Conexão efetuada com sucesso!";
-    } */    
+    }   */ 
 ?>
-
-
- <?php /* 
+ <!-- 
       if($_POST) {
         $senha          = $_POST['senha'];
         $senhaConfirma  = $_POST['senha_confirma'];
@@ -30,4 +26,4 @@
         }
         echo "<p id='mensagem'>".$mensagem."</p>";
     }
-?> */
+-->
