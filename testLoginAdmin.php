@@ -1,19 +1,19 @@
 <?php
     session_start();
     /* print_r($_REQUEST); */
-    if(isset($_POST['submit']) && !empty($_POST['cpf']) && !empty($_POST['senha']))
+    if(isset($_POST['submit']) && !empty($_POST['nomeadmin']) && !empty($_POST['senhaadmin']))
     {
         //Acessa o sistema
         include_once('config.php');
-        $cpf = $_POST['cpf'];
-        $senha = $_POST['senha'];
+        $nomeadmin = $_POST['nomeadmin'];
+        $senhaadmin = $_POST['senhaadmin'];
 
         /* print_r('Email: ' . $email);
         print_r('Senha: ' . $senha); */
         
         /* Verifica a existencia de cadastro e ve se tem ou não */
 
-        $sql = "SELECT * FROM usuarios WHERE cpf = '$cpf' and senha = '$senha'";
+        $sql = "SELECT * FROM usradmin WHERE nomeadmin = '$nomeadmin' and senhaadmin = '$senhaadmin'";
 
         $result = $conexao->query($sql);
 
@@ -26,22 +26,22 @@
         if(mysqli_num_rows($result) < 1)
         {
             //Não Existe Cadastro
-            unset($_SESSION['cpf']);
-            unset($_SESSION['senha']);
-            header('Location: login-usuario.php');
+            unset($_SESSION['nomeadmin']);
+            unset($_SESSION['senhaadmin']);
+            header('Location: login-admin.php');
         }
         else
         {
             //Existe Cadastro e redireciona ao sistema criando uma sessão.
-            $_SESSION['cpf'] = $cpf;
-            $_SESSION['senha'] = $senha;
-            header('Location: home-usuario.php');
+            $_SESSION['nomeadmin'] = $nomeadmin;
+            $_SESSION['senhaadmin'] = $senhaadmin;
+            header('Location: home-admin.php');
         }
     }
     else
     {
         //Nao Acessa pq n tem registro e vai pra pagina de login
-        header('Location: login-usuario.php');
+        header('Location: login-admin.php');
     }
 
 ?>
