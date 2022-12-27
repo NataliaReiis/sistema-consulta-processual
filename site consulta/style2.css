@@ -1,0 +1,296 @@
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/bg.opacity2.png);
+    overflow-x: hidden;
+}
+
+.divmae{
+    min-height: 45vw;
+}
+
+header{
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.logo{
+    float: left;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #2f425a;
+}
+.sair{
+    float: right;
+    width: 10%;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #2f425a;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+     border: 1px solid white;
+  
+
+}
+.sair:hover{
+    border: 1px solid #2f425a;
+    background-color: white;
+    color: #2f425a;
+}
+
+.admin{
+  margin-top: 8px;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  color: #2f425a;
+
+}
+.titulo-usuario{
+    margin-top: -30px;
+    width: 100%;
+    text-align: center;
+    }
+
+.titulo1{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #2f425a;
+    text-align: center;
+    margin-top: 25px;
+ 
+}
+
+.titulo-usuario p{
+    margin: 5px;
+}
+.titulo-usuario img{
+    margin-top: -40px;
+    width: 200px;       
+}
+.titulo-new-relatorio {
+    margin-top: -30px;
+    width: 100%;
+    text-align: center;
+}
+.titulo-new-relatorio img{
+    width: 200px;
+    margin-top: -50px;
+}
+
+.titulo-new-relatorio h1{
+    margin-top: -50px;
+    font-size: 20px;
+    color: #2f425a;
+}
+.titulo-new-relatorio p{
+    margin: 5px;
+} 
+/* Formulario Usuario recebendo infos */
+.form-acompanhamento .sessao1{
+    margin: 40px;
+}
+form{
+    margin: 20px auto;
+    width: 50%;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.423);
+    border-radius: 1em;
+    background-color: #2f425a;
+    color: aliceblue;
+   
+}
+
+form div + div{
+    margin-top: 10px;
+    
+}
+
+label{
+    display: flex;
+    width: 100%;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+input{
+    height: 28px;
+}
+
+input, textarea{
+width: 100%;
+   
+}
+
+.contato{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+.contato p{
+    padding: 5px;
+    font-size: 14px;
+}
+
+ /* Pagina Admin */
+ /* Home */
+ .sessao1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin:0 auto; 
+    margin-top: 25px;
+    margin-bottom: 100px;  
+    
+}
+ .sessao1 a{
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+   
+ }
+ .sessao1 a:hover{
+    margin: 0 auto;
+    text-decoration: none;
+    color: #2f425a;
+   
+ }
+ .sessao1 h2{
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+   
+ }
+ .sessao1  div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(116, 104, 104);
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #2f425a;
+}
+
+.img-icon{
+    margin-top: 38px;
+    width: 40px;
+   
+}
+
+.sessao1 div:hover{
+    background-color: white;
+    
+}
+.sessao1 div h2:hover{
+    color: #2f425a;
+}
+
+
+/* Pagina New relatorio */
+
+#enviar{
+    margin-top: 25px;
+    width: 22%;
+    height: 35px;
+    background-color: green;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+.voltar{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.voltar a {
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 5px;
+    text-decoration: none;
+
+}
+/* FOOTER */
+footer{
+    background-color: #2f425a;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+    padding: 5px;
+    padding-top: 25px;
+}
+
+
+
+/*TELA LOGIN ADMIN */
+.tela-login-admin{
+    position: absolute;
+    padding: 13px 60px  ;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+
+   
+}
+.titulo{
+    font-size: 11px;
+    background-color: #2f425a;
+    padding: 15px 15px;
+    color: aliceblue;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+   }
+
+
+.img-titulo{
+       width: 200px;
+       position: absolute;
+       top: 8%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+   }
+
+.input{
+    padding: 13px;
+    border-bottom: 1px solid #2f425a;
+    outline: none;
+    width: 200px;
+    border: 1px solid #2f425a;
+    border-radius: 15px;
+    
+}
+
+#button{
+    padding: 10px;
+    width: 50%;
+    height: 20%;
+    color: #2f425a;
+    font-size: 16px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #2f425a;
+}
+
+
